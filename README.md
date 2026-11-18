@@ -181,18 +181,6 @@ Projects focused on climate resilience and inclusive technology in Cambodia.
 
 ---
 
-## 🐍 GitHub Contribution
-
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg">
-  <img alt="My GitHub contribution graph with a pink snake eating the contribution squares" src="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg" width="100%">
-</picture>
-</div>
-
----
-
 ## 📜 Certifications
 
 - Scrum Master Certification, Agile Enterprise Coach (2026)
