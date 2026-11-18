@@ -16,10 +16,9 @@ Based in Phnom Penh, Cambodia 🌸
 
 <table align="center">
   <tr>
-    <td align="center" width="25%">🥈<br/><b>First Runner-Up</b><br/><sub>E-Gen Innovation Program, MoEYS (2025)</sub></td>
-    <td align="center" width="25%">🏅<br/><b>Top 5 Finalist</b><br/><sub>SEA Sponge City Innovation Challenge (2025)</sub></td>
-    <td align="center" width="25%">🛰️<br/><b>NASA Space Apps Challenge</b><br/><sub>ORBY, a space-exploration game with real NASA data</sub></td>
-    <td align="center" width="25%">🎓<br/><b>75% Scholarship</b><br/><sub>B.Sc. Software Engineering, CamTech</sub></td>
+    <td align="center" width="33%">🥈<br/><b>First Runner-Up</b><br/><sub>E-Gen Innovation Program, MoEYS (2025)</sub></td>
+    <td align="center" width="33%">🏅<br/><b>Top 5 Finalist</b><br/><sub>SEA Sponge City Innovation Challenge (2025)</sub></td>
+    <td align="center" width="33%">🛰️<br/><b>NASA Space Apps Challenge</b><br/><sub>ORBY, a space-exploration game with real NASA data</sub></td>
   </tr>
 </table>
 
@@ -34,13 +33,64 @@ I am a second-year Software Engineering student at CamTech. I build practical so
 | 💬 **Languages** | Khmer (native), English (fluent) |
 | 🌱 **Looking for** | Software engineering internships (full-stack and backend) |
 
-## 🧭 How I Build
+## 🧭 How I Work in the Era of AI
 
-| Principle | Where it shows up |
-|---|---|
-| 📶 **Design for the connection people actually have** | ClearAir includes an SMS fallback for areas with low internet access. |
-| 🗣️ **Test with real users** | ClearAir alerts are in Khmer and English and were validated through interviews and usability testing with Cambodian users. |
-| 📐 **Write the design down** | On HomeSweet I produced architecture diagrams, data flows and technical specifications for the team. |
+AI helps me build faster, but good software still starts with people. This is the order I follow:
+
+1. **Know the problem from the user.** I start with the people who will use the product.
+2. **Plan the project with the SDLC.** I follow the Software Development Life Cycle and write every document the user's requirements call for.
+3. **Design the whole system.** I plan the system design and the architecture of the full system.
+4. **Design the UX/UI.** I shape the experience and the interface before the build.
+
+### The six stages
+
+| # | Stage | What I do | Key deliverables |
+|---|---|---|---|
+| 01 | **Problem Discovery**<br/><sub>Empathize and frame</sub> | Identify real-world friction points, user frustrations and technical constraints before writing a single line of code. | User interviews, problem definition, scope mapping |
+| 02 | **Research and Insights**<br/><sub>Explore and analyze</sub> | Analyze existing solutions, survey target audiences and form data-backed architectural hypotheses. | Competitive auditing, user personas, feature matrix |
+| 03 | **UX Architecture**<br/><sub>Structure and flow</sub> | Map user journeys and information architecture, and set up scalable database schemas and API contracts. | Wireframing, user flowcharts, API contract specs |
+| 04 | **UI Design and Prototyping**<br/><sub>Design and iterate</sub> | Craft design systems in Figma with tokens, typography hierarchy, high contrast and interactive prototypes. | Design system tokens, Figma high-fidelity mockups, interactive prototypes |
+| 05 | **Agile Engineering**<br/><sub>Develop and test</sub> | Translate designs into clean TypeScript and React code with full modularity, state management and edge-case testing. | React / Next.js implementation, Node.js API integration, unit and end-to-end validation |
+| 06 | **Ship and Iterate**<br/><sub>Deploy and optimize</sub> | Deploy to cloud platforms, evaluate Core Web Vitals and keep gathering user feedback for continuous improvement. | Production CI/CD, performance tuning, post-launch analytics |
+
+### System architecture
+
+The architecture I plan before development starts: clients, backend, data and external services.
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
+flowchart LR
+  subgraph Clients
+    Web["Web<br/>React / Vue / PWA"]
+    Desktop["Desktop<br/>Electron"]
+    Mobile["Mobile<br/>Flutter / Expo"]
+  end
+  subgraph Backend
+    RT["Real-time<br/>Socket.IO"]
+    API["REST API<br/>Express / FastAPI"]
+  end
+  subgraph Data
+    FB[("Firebase")]
+    PG[("PostgreSQL<br/>Neon / Supabase")]
+  end
+  subgraph Services
+    Pay["Payments<br/>ABA KHQR"]
+    OCR["OCR + TTS<br/>Vision / Azure"]
+    POS["Brokers + POS<br/>MT5 / Loyverse"]
+    AI["AI<br/>Gemini / Ollama"]
+  end
+  Web --> FB
+  Web --> PG
+  Web <--> RT
+  Web --> API
+  Desktop --> API
+  Mobile --> API
+  API --> PG
+  API --> Pay
+  API --> OCR
+  API --> POS
+  API --> AI
+```
 
 ---
 
@@ -178,6 +228,18 @@ Projects focused on climate resilience and inclusive technology in Cambodia.
 | [Personal Portfolio v1](https://github.com/SothSokhomal/SothSokhomal_portfolio) | Responsive portfolio site with modern UI components | `HTML` `CSS` `JavaScript` |
 | [Expense Tracker](https://github.com/SothSokhomal/expenseapp) | CRUD web app to add, update and delete daily expenses | `HTML` `CSS` `JavaScript` |
 | [Spotify UI Clone](https://github.com/SothSokhomal/song_soundie) | Responsive front-end clone for layout and CSS practice | `HTML` `CSS` `JavaScript` |
+
+---
+
+## 🐍 GitHub Contribution
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg">
+  <img alt="My GitHub contribution graph with a pink snake eating the contribution squares" src="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+</div>
 
 ---
 
