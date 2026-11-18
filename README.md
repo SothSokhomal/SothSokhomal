@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg" alt="Soth Vannak RothChansokhomal, Software Engineering Student and Full-Stack Developer" width="100%"/>
+<img src="banner.svg" alt="Soth Vannak RothChansokhomal, also known as ByteBabe. Software Engineering Student and Full-Stack Developer" width="100%"/>
 
 ### Software engineering student building full-stack web and mobile products with React, Node.js and Flutter.
 
@@ -12,6 +12,17 @@ Based in Phnom Penh, Cambodia 🌸
 
 </div>
 
+<br/>
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%">🥈<br/><b>First Runner-Up</b><br/><sub>E-Gen Innovation Program, MoEYS (2025)</sub></td>
+    <td align="center" width="25%">🏅<br/><b>Top 5 Finalist</b><br/><sub>SEA Sponge City Innovation Challenge (2025)</sub></td>
+    <td align="center" width="25%">🛰️<br/><b>NASA Space Apps Challenge</b><br/><sub>ORBY, a space-exploration game with real NASA data</sub></td>
+    <td align="center" width="25%">🎓<br/><b>75% Scholarship</b><br/><sub>B.Sc. Software Engineering, CamTech</sub></td>
+  </tr>
+</table>
+
 ---
 
 ## ✨ About
@@ -20,18 +31,25 @@ I am a second-year Software Engineering student at CamTech. I build practical so
 
 | | |
 |---|---|
-| 🎓 **Education** | B.Sc. Software Engineering, CamTech (2024 to present), 75% scholarship |
-| 🔭 **Currently** | ClearAir, an emergency air-pollution alert app (UX research and product design) |
 | 💬 **Languages** | Khmer (native), English (fluent) |
 | 🌱 **Looking for** | Software engineering internships (full-stack and backend) |
+
+## 🧭 How I Build
+
+| Principle | Where it shows up |
+|---|---|
+| 📶 **Design for the connection people actually have** | ClearAir includes an SMS fallback for areas with low internet access. |
+| 🗣️ **Test with real users** | ClearAir alerts are in Khmer and English and were validated through interviews and usability testing with Cambodian users. |
+| 📐 **Write the design down** | On HomeSweet I produced architecture diagrams, data flows and technical specifications for the team. |
 
 ---
 
 ## 🎀 Tech Stack
 
 **Languages**
-![Dart](https://img.shields.io/badge/Dart-F4A6C0?style=flat-square&logo=dart&logoColor=4A2545)
+![TypeScript](https://img.shields.io/badge/TypeScript-F4A6C0?style=flat-square&logo=typescript&logoColor=4A2545)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F4A6C0?style=flat-square&logo=javascript&logoColor=4A2545)
+![Dart](https://img.shields.io/badge/Dart-F4A6C0?style=flat-square&logo=dart&logoColor=4A2545)
 ![Python](https://img.shields.io/badge/Python-F4A6C0?style=flat-square&logo=python&logoColor=4A2545)
 ![Java](https://img.shields.io/badge/Java-F4A6C0?style=flat-square&logo=openjdk&logoColor=4A2545)
 ![C/C++](https://img.shields.io/badge/C%2FC%2B%2B-F4A6C0?style=flat-square&logo=cplusplus&logoColor=4A2545)
@@ -40,6 +58,7 @@ I am a second-year Software Engineering student at CamTech. I build practical so
 ![React](https://img.shields.io/badge/React-D9CCF7?style=flat-square&logo=react&logoColor=4A2545)
 ![Node.js](https://img.shields.io/badge/Node.js-D9CCF7?style=flat-square&logo=nodedotjs&logoColor=4A2545)
 ![Express](https://img.shields.io/badge/Express-D9CCF7?style=flat-square&logo=express&logoColor=4A2545)
+![Telegram Bot](https://img.shields.io/badge/Telegram_Bot-D9CCF7?style=flat-square&logo=telegram&logoColor=4A2545)
 ![REST API](https://img.shields.io/badge/REST_API-D9CCF7?style=flat-square)
 ![HTML5](https://img.shields.io/badge/HTML5-D9CCF7?style=flat-square&logo=html5&logoColor=4A2545)
 ![CSS3](https://img.shields.io/badge/CSS3-D9CCF7?style=flat-square&logo=css3&logoColor=4A2545)
@@ -76,16 +95,25 @@ I am a second-year Software Engineering student at CamTech. I build practical so
 
 ## 💻 Engineering Projects
 
-### 📚 Jomnes App
-**A mobile app that helps students and parents find part-time educators.**
+### 🚀 ORBY: Lunar Astronaut Training Game
+**An interactive space-exploration game built for the NASA Space Apps Challenge.**
 
-- **My role:** Backend developer in a team with Flutter developers.
-- **What I built:** Node.js and Express.js REST APIs for teacher discovery, with filtering by subject, level, location and availability.
-- **Data model:** Structured tutor profiles covering subjects, pricing, schedule and contact details.
-- **Collaboration:** Shared work with the Flutter developers through Git and GitHub.
-- **Stack:** `Flutter` `Dart` `Node.js` `Express.js` `Supabase`
+- **What it does:** Players lead a crew of four astronauts at the Lunar South Pole for 90 days (Project Artemis) and can explore planets and moons using real NASA data. The app includes missions, a leaderboard and crew screens.
+- **Stack:** `TypeScript`
+- **Links:** [Live demo](https://orby-project.vercel.app/) · [Source code](https://github.com/SothSokhomal/ORBY-Project)
 
-<!-- TODO: add the Jomnes live demo and GitHub repository links here once they are public -->
+<!-- TODO: add one line on your role in ORBY, the rest of the stack, and the Space Apps result if there is one -->
+
+### 🌐 Personal Portfolio Website with Admin Portal
+**A full-stack portfolio that gives recruiters one place to see my skills, projects and experience.**
+
+- **What it does:** Presents each project as a case study (problem, solution and architecture), along with my skills, experience and a downloadable résumé. A contact form lets recruiters reach me directly.
+- **Admin portal:** A separate admin portal for managing the site.
+- **Telegram bot:** A Telegram bot connected to the site.
+- **Stack:** `React` `Node.js` `Express.js` `Telegram Bot`
+- **Links:** [Live site](https://www.sothsokhomal.com/)
+
+<!-- TODO: say what the admin portal manages and what the Telegram bot does, and add the source code link if the repo is public -->
 
 ### 🌦️ AI-Powered Weather Chatbot
 **A chatbot that answers real-time weather questions for any location.**
@@ -102,6 +130,17 @@ I am a second-year Software Engineering student at CamTech. I build practical so
 - **Stack:** `Python` `OpenCV`
 - **Links:** [Source code](https://github.com/SothSokhomal/Face_Recognition)
 
+### 📚 Jomnes App
+**A mobile app that helps students and parents find part-time educators.**
+
+- **My role:** Backend developer in a team with Flutter developers.
+- **What I built:** Node.js and Express.js REST APIs for teacher discovery, with filtering by subject, level, location and availability.
+- **Data model:** Structured tutor profiles covering subjects, pricing, schedule and contact details.
+- **Collaboration:** Shared work with the Flutter developers through Git and GitHub.
+- **Stack:** `Flutter` `Dart` `Node.js` `Express.js` `Supabase`
+
+<!-- TODO: add the Jomnes live demo and GitHub repository links here once they are public -->
+
 ### 🏠 HomeSweet Rental App
 **A cross-platform student housing app.**
 
@@ -116,7 +155,7 @@ I am a second-year Software Engineering student at CamTech. I build practical so
 
 Projects focused on climate resilience and inclusive technology in Cambodia.
 
-### 🌫️ ClearAir: Emergency Air Pollution Alert App (2025 to present)
+### 🌫️ ClearAir: Emergency Air Pollution Alert App
 - **My role:** UX researcher and product designer.
 - **What I built:** A prototype with Khmer and English AQI alerts, health guidance, and an SMS fallback for areas with low internet access.
 - **How I validated it:** User interviews and usability testing with Cambodian users.
@@ -142,12 +181,17 @@ Projects focused on climate resilience and inclusive technology in Cambodia.
 
 ---
 
-## 👩‍💻 Leadership and Community
+## 🐍 GitHub Contribution
 
-- 🌏 **eMpowering Youths Across ASEAN (eYAA) Cohort 6, 2026:** Selected as a Cambodian representative and joined the Operations and Logistics Team in Puerto Princesa, Philippines. The programs the team supported reached 120 marginalized youths, 1,000 students and 50 aspiring entrepreneurs.
-- 💖 **Sisters of Code, Ambassador (2026):** Promote digital literacy and encourage young women to take up STEM and programming.
-- 🤝 **TVET, Registration Assistant and Volunteer (2025 to 2026):** Supported registration, communication and event coordination.
-- 🎪 **Prosob Festival, Youth Volunteer (2025):** Supported event coordination and participants.
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg">
+  <img alt="My GitHub contribution graph with a pink snake eating the contribution squares" src="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+</div>
+
+---
 
 ## 📜 Certifications
 
