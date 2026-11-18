@@ -401,11 +401,11 @@ flowchart LR
 
 <h2 align="center">🌱 Earlier Builds</h2>
 
-<p align="center"><sub>Where I started: HTML, CSS and JavaScript</sub></p>
+<p align="center"><sub>Where I started: HTML, CSS and JavaScript since 2022</sub></p>
 
 <table width="100%">
 <tr>
-<td width="33%" valign="top">
+<td width="60%" valign="top">
 <img alt="Earlier Build" src="https://img.shields.io/badge/Earlier_Build-FFD6E7?style=flat-square"/>
 <h3>🌱 Personal Portfolio v1</h3>
 <b>First portfolio site</b>
