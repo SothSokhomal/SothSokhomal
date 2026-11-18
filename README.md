@@ -53,9 +53,121 @@ AI helps me build faster, but good software still starts with people. This is th
 | 05 | **Agile Engineering**<br/><sub>Develop and test</sub> | Translate designs into clean TypeScript and React code with full modularity, state management and edge-case testing. | React / Next.js implementation, Node.js API integration, unit and end-to-end validation |
 | 06 | **Ship and Iterate**<br/><sub>Deploy and optimize</sub> | Deploy to cloud platforms, evaluate Core Web Vitals and keep gathering user feedback for continuous improvement. | Production CI/CD, performance tuning, post-launch analytics |
 
-### System architecture
+### System architecture: shaped by the project
 
-The architecture I plan before development starts: clients, backend, data and external services.
+I do not use one fixed architecture. I start from the same layers (clients, backend, data and services) and keep only what each project needs.
+
+<details open>
+<summary><b>📚 Jomnes App</b>: mobile app with a REST API</summary>
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
+flowchart LR
+  subgraph Client["Client"]
+    App["Flutter app<br/>students and parents"]
+  end
+  subgraph Backend["Backend"]
+    API["REST API<br/>Node.js / Express.js<br/>teacher discovery and filters"]
+  end
+  subgraph Data["Data"]
+    DB[("Supabase<br/>tutor profiles")]
+  end
+  App --> API
+  API --> DB
+```
+
+</details>
+
+<details>
+<summary><b>🌐 Portfolio Website with Admin Portal</b>: public site, admin area and Telegram bot</summary>
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
+flowchart LR
+  Visitor(("Recruiter"))
+  Owner(("Admin"))
+  subgraph Clients["Clients"]
+    Site["React site<br/>case studies and contact form"]
+    Portal["Admin portal"]
+  end
+  subgraph Backend["Backend"]
+    API["API<br/>Node.js / Express.js"]
+  end
+  Bot["Telegram bot"]
+  Visitor --> Site
+  Owner --> Portal
+  Site --> API
+  Portal --> API
+  API --- Bot
+```
+
+</details>
+
+<details>
+<summary><b>🌦️ AI-Powered Weather Chatbot</b>: conversational interface with NLP and live data</summary>
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
+flowchart LR
+  User(("User"))
+  subgraph Client["Client"]
+    UI["React interface"]
+  end
+  subgraph Backend["Backend"]
+    Server["Node.js server"]
+    NLP["NLP<br/>intent recognition"]
+  end
+  subgraph Services["External service"]
+    Weather["OpenWeatherMap API<br/>live weather data"]
+  end
+  User --> UI
+  UI --> Server
+  Server --> NLP
+  Server --> Weather
+```
+
+</details>
+
+<details>
+<summary><b>🏠 HomeSweet Rental App</b>: cross-platform clients on Firebase</summary>
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
+flowchart LR
+  subgraph Clients["Clients"]
+    Flutter["Flutter app"]
+    Vue["Vue.js app"]
+  end
+  subgraph BaaS["Backend as a service"]
+    FB[("Firebase")]
+  end
+  Flutter --> FB
+  Vue --> FB
+```
+
+</details>
+
+<details>
+<summary><b>🚀 ORBY</b>: web game with real NASA data</summary>
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
+flowchart LR
+  Player(("Player"))
+  subgraph App["ORBY web app<br/>TypeScript, hosted on Vercel"]
+    Game["Game mode<br/>lead 4 astronauts for 90 days"]
+    Solar["Solar System mode<br/>explore planets and moons"]
+  end
+  NASA[("Real NASA data")]
+  Player --> Game
+  Player --> Solar
+  Solar --> NASA
+```
+
+</details>
+
+<details>
+<summary><b>🧩 Full reference architecture</b>: every layer I can combine</summary>
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFE6F0', 'primaryBorderColor': '#E8789F', 'primaryTextColor': '#4A2545', 'lineColor': '#B0558A', 'clusterBkg': '#F6EAF2', 'clusterBorder': '#B8A1E3'}}}%%
@@ -91,6 +203,8 @@ flowchart LR
   API --> POS
   API --> AI
 ```
+
+</details>
 
 ---
 
@@ -228,18 +342,6 @@ Projects focused on climate resilience and inclusive technology in Cambodia.
 | [Personal Portfolio v1](https://github.com/SothSokhomal/SothSokhomal_portfolio) | Responsive portfolio site with modern UI components | `HTML` `CSS` `JavaScript` |
 | [Expense Tracker](https://github.com/SothSokhomal/expenseapp) | CRUD web app to add, update and delete daily expenses | `HTML` `CSS` `JavaScript` |
 | [Spotify UI Clone](https://github.com/SothSokhomal/song_soundie) | Responsive front-end clone for layout and CSS practice | `HTML` `CSS` `JavaScript` |
-
----
-
-## 🐍 GitHub Contribution
-
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg">
-  <img alt="My GitHub contribution graph with a pink snake eating the contribution squares" src="https://raw.githubusercontent.com/SothSokhomal/SothSokhomal/output/github-contribution-grid-snake.svg" width="100%">
-</picture>
-</div>
 
 ---
 
